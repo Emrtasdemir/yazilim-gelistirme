@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicSelectors</title>
+    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    
+    <style>
+        /*en genel seçicilerden başlanmalı örneğin * evrensel olan işaretle başlanmalı*/
+        * {
+            color: red;
+        }
+        /*important ile işaretlersek alttaki değişikliklerden etkilenmeyecek kısım olur*/
+        #logo{
+            color: red !important ;
+                }
+        
+        /*css teki işlem sırası ikisi aynı yeri ifade eder en alttaki özellik geçerli olur*/
+         h1{
+            color: blue;
+         }
+         #logo {
+            color: red;
+         }
+ 
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li> <a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, ullam?
+    </p>
+    <p class="info">
+     Lorem, ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Similique nisi soluta molestiae?
+    </p>
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span> sit amet, consectetur adipisicing elit. Quod est quia iste cumque illum, maiores modi.
+    </p>
+    <p>Test Paragraph</p>
+
+    <a href="#">Home</a>
+</body>
+</html>

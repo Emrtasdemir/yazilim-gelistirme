@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicSelectors</title>
+    
+    <style>
+        /*tüm h1 leri seç*/
+     /*h1 {
+        background-color: blue;
+        color: red;
+     }
+     p {
+        color: pink;
+        background-color: yellow;
+     } 
+     /*
+     h1,p {   // ikisini ortak olarak aynı özellikleri atarız
+        color: red;
+        background : blue;
+     } */
+     #logo{   /*id ye göre özellik belirleriz h1 lerin içinden id si logo olan başlık */
+        color: red;
+        background-color: blue;
+     }
+    
+     .info {    /* p etiketi içinden . ile info olan id leri al*/
+        color: red;
+        background-color: blue;
+     }
+     #logo, .lead { /* iki farklı id yi berlierterek özellik atanması */
+        color: red;
+        background-color: blue;
+     }
+     #para1.lead{ /* hem id si para1 olan hem classı lead olan yere özellik atar*/
+        color: red;
+        background-color: blue;
+     }
+     a {
+        text-decoration: underline; /*kaldırmak için underline yerine none yazılır çizgi için*/
+     }
+     ul li a { /* ul etiketi içindeki li etiketinin içindeki a etiketi için özellik*/
+        text-decoration: underline; /*a etiketi için aynı yeri ifade eder*/
+     }
+     .info span{ /*info clası içindeki span etiketi*/
+        color: red;
+     }
+     .info .primary{ /* info clası içindeki primary clasını seç */
+        color: red;
+     }
+
+     *{/* bütün etiketleri kapsar evrensel seçici*/
+        font-size: 30px;
+     }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li> <a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, ullam?
+    </p>
+    <p class="info">
+     Lorem, ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Similique nisi soluta molestiae?
+    </p>
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span> sit amet, consectetur adipisicing elit. Quod est quia iste cumque illum, maiores modi.
+    </p>
+    <p>Test Paragraph</p>
+
+    <a href="#">Home</a>
+</body>
+</html>

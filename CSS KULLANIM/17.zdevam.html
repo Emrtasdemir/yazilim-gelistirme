@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child Part2</title>
+    <style>
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        /* n=0 b=0 , 0,2,4,6,8,10 */
+        ul li:nth-child(2n){
+            color: red;
+        }
+        ul li:nth-child(2n+1){
+            color: blue;
+        }
+        /*4.çocuktan sonraki kısmı background aldı*/
+        ul li:nth-child(n + 4){
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>       
+    </ul>
+    
+</body>
+</html>

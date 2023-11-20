@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Class</title>
+    <style>
+        a{
+            color: white;
+            font-size: 1.5em;
+            display: inline-block;
+            background: blue;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover{
+        background: white;
+        color: blue;
+        border: 1px solid blue;
+        border-radius: 5px;
+        }
+
+        /* 
+        selector:pseudo_class{
+
+        } 
+        */
+
+        a {
+          font-size: 24px;
+        }
+        /* linkin rengi */
+        a:link {    
+            color: white;
+        }
+        
+        /* önceden basılmışsa sıyah olarak gozukecek*/
+        a:visited { 
+            color: black;
+        }
+        /* linkin üstüne gelince renk degisır*/
+        a:hover { 
+            color: red;
+        }
+        /* tam üstünde basılı tutunca mavi görünür */
+        a:active {    
+            color: blue;
+        }  */
+        
+        
+        
+        input {
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        input:focus{
+            outline: 0;
+            border: 2px solid red; /*inputa basınca renk değişir*/
+        } 
+         
+
+    </style>
+</head>
+<body>
+     <a href="#" >This is link</a>
+    <a href="#">Facebook</a>
+    
+    <input type=" text" placeholder="Name">
+</body>
+</html>

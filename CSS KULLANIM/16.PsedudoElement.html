@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Element</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .para2::first-line{
+         color: red;
+       }
+       .para2::first-letter{ 
+         color: blue;
+         font-size: 50px;
+       } 
+        
+       .para1{
+         font-size: 1.5em;
+         letter-spacing: 2px;
+         line-height: 1.5em;
+       }
+        /* .para1::first-line{
+         color: red;
+       }
+       .para1::first-letter{ 
+         color: blue;
+         font-size: 50px;
+       }  */
+       .para1::after{
+        content: url("images/images2.jpg");
+       }
+       .para1::before{ /*Paragraf Öncesi ikon koyuldu*/
+        content: icon;
+       }
+    </style>
+</head>
+<body>
+    <p class="para2">Lorem ipsum dolor sit amet.</p>
+    <i class="fa-solid fa-code"></i>
+    <p class="para1"> <br> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis reprehenderit, minima nulla amet reiciendis voluptatum ducimus mollitia? Odio, cum iure. Voluptatem optio culpa repellat! Facilis, dolor nihil? Autem cumque voluptatem excepturi voluptatibus atque natus minus. Expedita, atque quod explicabo velit id aut dicta modi impedit doloribus, vero, aliquid labore.</p>
+</body>
+</html>

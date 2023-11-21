@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        .outer-box{
+            width: 200px;
+            height: 200px;
+            background-color: #a7a7a7;
+            position: relative; /*position absolute özelliği kullanıldığı için düzgün çalışması için bir position özelliği atanması lazım*/
+        }
+        .inner-box{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        /* .fixed-topbar{
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: fixed;
+        } */
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            z-index: 1; /* kırmız rengi mavinin üstüne cıkardı 3 boyutlu işlem*/
+        }
+        .blue{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            left: 5px;
+            top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+  <!--  <div class="fixed-topbar">Udemy</div> -->
+  <div class="red"></div>
+  <div class="blue"></div>
+</body>
+</html>

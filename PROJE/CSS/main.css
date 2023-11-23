@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+a{
+    text-decoration: none;
+    color: white;
+}
+html{
+    font-family: "Merriweather", serif;
+}
+/* Navbar Section*/
+#navbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.75rem;
+
+}
+#navbar ul li a:hover{
+    background: #336ea2;
+    border-radius: 5px;
+
+}
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+#home img {
+    
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+#home .name h2{
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+#home .name p{
+    opacity: 0.5;
+    font-style: italic;
+}
+
+/* Training */
+#training{
+    padding: 1rem;
+    color: white;
+}
+#training .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#training .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.7rem;
+}
+#training .items .item:hover{
+    color: rgb(255, 0, 76);
+    opacity: 0.5;
+}
+
+/* Biografi (courses) */
+#biografi{
+    color: #333;
+}
+.bio .text1{
+    text-align: center;
+    opacity: 0.6;
+    width: 100%;
+}
+.bio .title1 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.biografi{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+/* Contact */
+#contact{
+    color: white;
+    padding: 1rem;
+}
+#contact .contact-form{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+#contact .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+}
+#contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+}
+#contact .contact-form ul li a:hover{
+    opacity: 0.8;
+}
+

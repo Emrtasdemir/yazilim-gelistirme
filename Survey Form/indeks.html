@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lan="en">
+ <head>
+   <meta charset="UTF8">
+   <title>freeCodeCamp Survey Form</title>
+   <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+     <div class="survey">
+     <h1 id="title">Survey Form</h1>
+<p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque necessitatibus dolorem quasi.
+</p>
+<form id="survey-form">
+     <fieldset>
+       <label id="name-label">Name<input id="name" type="name" placeholder="Enter your name"  class="inline" required/></label>
+     <label id="email-label">Email<input id="email" Type="email" placeholder="Enter your Email"  class="inline" required/></label>
+     <label id="number-label" >Age (optional)<input id="number" type="number" min="13" max="120" Placeholder="Age" class="inline"  />
+       </label>
+       <label>Lorem ipsum dolor sit amet.<select id="dropdown" type="select" class="inline">
+         <option value="">Select current role</option>
+           <option value="1">Student</option>
+           <option value="2">Full Time Job</option>
+           <option value="3">Full Time Learner</option>
+           <option value="4">Prefer not to say</option>
+           <option value="5">Other</option>
+</select>
+</label>
+<label>
+ <label>
+ Would you recommend freeCodeCamp to a friend?
+<label> <input type="radio" value="radio" name="recommendation" class="recommendation" id="definetly" for="definetly">
+Definetly
+</label>
+<label> <input type="radio" value="radio" name="recommendation" class="recommendation" id="maybe" for="maybe">
+Maybe
+</label>
+<label> <input type="radio" value="radio" name="recommendation" class="recommendation" id="not sure" for='mot sure'>
+Not sure
+</label>
+</label>
+<label>What would you like to see improved? (Check all that apply)
+<label><input type="checkbox" value="1" name="suggesst" class="recommendation"/>Front-end Projects</label>
+<label><input type="checkbox" value="2" name="suggesst" class="recommendation"/>Back-end Projects</label>
+<label><input type="checkbox" value="3" name="suggesst" class="recommendation"/>Data Visualization</label>
+<label><input type="checkbox" value="4" name="suggesst" class="recommendation"/>Challenges</label>
+<label><input type="checkbox" value="5" name="suggesst" class="recommendation"/>Open Source
+</label>
+<label><input type="checkbox" value="6" name="suggesst" class="recommendation"/>Gitter help rooms
+</label>
+<label><input type="checkbox" value="7" name="suggesst" class="recommendation"/>Videos
+</label>
+<label><input type="checkbox" value="8" name="suggesst" class="recommendation"/>City Meetups
+</label>
+<label><input type="checkbox" value="9" name="suggesst" class="recommendation"/>Wiki
+</label>
+<label><input type="checkbox" value="10" name="suggesst" class="recommendation"/>Forum
+</label>
+<label><input type="checkbox" value="11" name="suggesst" class="recommendation"/>Additional Courses
+</label>
+</label>
+<label>Any comments or suggestions?<textarea name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+</label>
+       </fieldset>
+       <input id="submit" type="submit" value="Submit" class="submit"/>
+       </form>
+       </div>
+       </body>
+ </html>

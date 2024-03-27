@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            text-align: center;
+            font-family: sans-serif;
+            font-size:18px;
+            background:red;
+        }
+        .container{
+            text-align: center;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <h1>JavaScript</h1>
+    
+    </div>
+    
+    <hr>
+    <div class="container">
+
+    </div>
+    
+    <script>
+        
+        var sayilar = [32,5,1,100,-1,90];
+
+        console.log("Array Elemanlari...");
+
+        for(var i=0 ; i < sayilar.length ; i++){
+            console.log("Eleman:" +sayilar[i]);
+        }
+        
+        //yukarıdakiyle aynı işlem 
+        sayilar.forEach(function(sayi){
+            console.log("Eleman:" + sayi);
+        });
+
+    </script>
+</body>
+</html>

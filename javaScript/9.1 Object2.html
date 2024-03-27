@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            text-align: center;
+            font-family: sans-serif;
+            font-size:18px;
+            background:red;
+        }
+        .container{
+            text-align: center;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <h1>JavaScript</h1>
+    
+    </div>
+    
+    <hr>
+    <div class="container">
+
+    </div>
+    
+    <script>
+        //#1
+    var calisan = new Object();
+    calisan.isim = "Emir";
+    calisan.soyisim = "Taşdemir";
+    calisan.isimBilgileri = function(){
+        return "İsim Bilgileri: "+ this.isim+ " "+ this.soyisim;
+
+    };
+
+    console.log(calisan.isim);
+    console.log(calisan.soyisim);
+    console.log(calisan.isimBilgileri());
+
+    //#2
+
+    function Calisan(isim,soyisim,numara){
+        this.isim = isim;
+        this.soyisim = soyisim;
+        this.numara = numara;
+        this.bilgileriGöster = function(){
+            return "İsim: " + this.isim + "\nSoyisim: "+ this.soyisim + "\nNumara:" +this.numara;
+            
+        }
+
+    }
+    var calisan1 = new Calisan("Emir","Taşdemir","123456");
+    var calisan2 = new Calisan("Muhammed Ali", "Demir","987654");
+    console.log(calisan1.bilgileriGöster());
+    console.log(calisan2.bilgileriGöster());
+
+    </script>
+</body>
+</html>

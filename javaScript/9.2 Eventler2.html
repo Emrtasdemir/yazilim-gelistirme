@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            text-align: center;
+            font-family: sans-serif;
+            font-size:18px;
+            background:red;
+        }
+        .container{
+            text-align: center;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <h1>JavaScript</h1>
+    
+    </div>
+    
+    <hr>
+    <div class="container">
+    <p id="para1">Paragraf 1</p>
+    <button onmouseover ="mouseover()" onmouseout="mouseout()">Tıkla</button>
+
+    </div>
+    
+    <script>
+       function mouseover(){
+        var element = document.getElementById("para1");
+        element.innerHTML = "Mouse Over Effect";
+        //mouse buton ustundeyken paragraf yazısı degisir
+        
+       }
+       function mouseout(){
+         var element = document.getElementById("para1");
+         element.innerHTML = "Mouse Out Effecti";
+         //mouse buton ustunden ayrildiğinda paragraf yazısı degisir
+       }
+
+
+    </script>
+</body>
+</html>

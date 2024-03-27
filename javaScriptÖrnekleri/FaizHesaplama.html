@@ -1,0 +1,60 @@
+<!-- 1.Başla
+2.Değişkenleri Tanımla
+3.Değişkenlere Değer aktar
+4.Gerekliyse şart kontrolü yap
+5.Varsa döngüyü çalıştır 
+6.Hesaplamaları yap
+7.Sonucu Yazdır 
+8.Bitir  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredi Hesaplama Formu</title>
+    <meta name="viewport" content="width-device, initial-scale=1">
+  <style>
+    form{
+        display: grid;
+        grid-template-columns: auto auto;
+        border: thin solid black;
+    }
+  </style>
+</head>
+<body>
+    <h3>KREDİ HESAPLAMA FORMU</h3>
+    <form action="#" id="formKredi">
+        <label for="txtKrediTutari">Çekilecek Kredi Tutarını giriniz:</label>
+        <input type="text" name="" id="txtKrediTutari">
+        <label for="listeVade">Vade Seçiniz:</label>
+        <select name="" id="listeVade">
+            <option value="12">12 ay</option>
+            <option value="24">24 ay</option>
+            <option value="36">36 ay</option>
+            <option value="48">48 ay</option>
+        </select>
+        <input type="button" value="Kredi Geri Ödeme Şartlarını Hesapla" onclick="krediHesapla();">
+    </form>
+    <h5 id="sonuc"></h5>
+
+    <script>
+        function krediHesapla(){
+            var cekilecekTutar,vadeSayisi;
+            var aylikTaksit, ödenecekToplamTutar;
+
+            cekilecekTutar=document.getElementById("txtKrediTutari").value;
+           var liste =document.getElementById("listeVade");
+           vadeSayisi=liste.options[liste.selectedIndex].value;
+
+           ödenecekToplamTutar=cekilecekTutar*1.1;
+           aylikTaksit=ödenecekToplamTutar/vadeSayisi;
+
+           document.querySelector("#sonuc").innerHTML="Geri Ödeme Toplamı:" +ödenecekToplamTutar+"<br>"+
+           "Aylık taksit Tutarınız:"+aylikTaksit.toFixed(2);
+
+        }
+
+    </script>
+</body>
+</html>

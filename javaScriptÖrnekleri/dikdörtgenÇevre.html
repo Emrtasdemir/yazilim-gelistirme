@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type="text" id="kenar1" placeholder="1. kenar">
+  <input type="text" id="kenar2" placeholder="2. kenar">
+  <input type="button" value="Hesapla" id="hesapla">
+
+<script>
+ 
+function hesapla(){
+ 
+var kenar1=document.getElementById("kenar1").value;
+var kenar2=document.getElementById("kenar2").value;
+ 
+kenar1=Number(kenar1);
+kenar2=Number(kenar2);
+var cevre=(kenar1+kenar2)*2;
+alert("İki kenarı girilen dikdörtgenin çevresi:"+cevre);
+ 
+}
+ 
+ 
+//hesaplama yapması için hesap butonunu seç
+var sonuc=document.getElementById("hesapla");
+ 
+sonuc.onclick=hesapla;
+ 
+ 
+</script>
+</body>
+</html>

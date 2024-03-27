@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basit Hesap Makinesi</title>
+</head>
+<body>
+    <input type="number" id="sayi1" placeholder="Sayı 1">
+    <input type="number" id="sayi2" placeholder="Sayı 2">
+
+    <br>
+
+    <select id="islem">
+        <option value="+">Toplama</option>
+        <option value="-">Çıkarma</option>
+        <option value="*">Çarpma</option>
+        <option value="/">Bölme</option>
+    </select>
+
+    <br>
+
+    <button onclick="hesapla()">Hesapla</button>
+
+    <br>
+
+    <div id="sonuc"></div>
+
+    <script>
+        function hesapla() {
+    var sayi1 = parseFloat(document.getElementById("sayi1").value);
+    var sayi2 = parseFloat(document.getElementById("sayi2").value);
+    var islem = document.getElementById("islem").value;
+
+    var sonuc;
+
+    if (islem === "+") {
+        sonuc = sayi1 + sayi2;
+    } else if (islem === "-") {
+        sonuc = sayi1 - sayi2;
+    } else if (islem === "*") {
+        sonuc = sayi1 * sayi2;
+    } else if (islem === "/") {
+        sonuc = sayi1 / sayi2;
+    }
+
+    document.getElementById("sonuc").innerHTML = "Sonuç: " + sonuc;
+}
+
+    </script>
+</body>
+</html>
